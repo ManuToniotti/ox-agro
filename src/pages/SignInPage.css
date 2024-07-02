@@ -1,0 +1,38 @@
+/* src/pages/SignInPage.css */
+body {
+    margin: 0;
+    padding: 0;
+}
+.signin-layout {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5; /* Fondo general */
+  }
+  
+  .signin-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .signin-container {
+    background: #ffffff; /* Fondo de la tarjeta */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; /* Ajusta esto según sea necesario */
+    width: 100%;
+  }
+  
+  .signin-logo {
+    margin-bottom: 24px;
+  }
+  
+  .signin-logo img {
+    width: 100px;
+  }
+  

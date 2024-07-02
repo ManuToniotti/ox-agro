@@ -1,0 +1,25 @@
+.client-card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .client-card {
+    width: 100%;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .client-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 21, 41, 0.15);
+  }
+  
+  .client-card .ant-card-meta-description div {
+    margin-bottom: 8px;
+  }
+  
+  .client-card .ant-card-meta-avatar {
+    margin-right: 16px;
+  }

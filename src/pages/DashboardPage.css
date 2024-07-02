@@ -1,0 +1,59 @@
+.dashboard-layout {
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px 40px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.client-card {
+  width: 300px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.client-card .ant-card-meta-description div {
+  margin-bottom: 8px;
+}
+
+.add-client-form .ant-form-item {
+  text-align: end;
+}
+
+.add-client-form .ant-form-item-label {
+  text-align: left;
+  flex: 0 0 190px; /* Adjust this value as needed */
+}
+
+.add-client-form .ant-form-item-control {
+  flex: 1;
+}
+
+.add-client-form .ant-input {
+  width: 100%;
+  text-align: left;
+}

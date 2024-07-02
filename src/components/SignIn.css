@@ -1,0 +1,23 @@
+/* src/components/SignIn.css */
+.signin-form {
+    max-width: 300px;
+  }
+  
+  .signin-form-forgot {
+    float: right;
+  }
+  
+  .signin-form-button {
+    width: 100%;
+  }
+  
+  .signin-form input {
+    border-radius: 8px;
+  }
+  
+  .signin-form .ant-btn-primary {
+    border-radius: 8px;
+    background-color: #000;
+    border: none;
+  }
+  
