@@ -41,12 +41,14 @@
 }
 
 .add-client-form .ant-form-item {
-  text-align: end;
+  display: flex;
+  justify-content: space-between;
 }
 
 .add-client-form .ant-form-item-label {
-  text-align: left;
-  flex: 0 0 190px; /* Adjust this value as needed */
+  text-align: right;
+  width: 180px; /* Adjust this value as needed */
+  margin-right: 18px;
 }
 
 .add-client-form .ant-form-item-control {
@@ -54,6 +56,11 @@
 }
 
 .add-client-form .ant-input {
-  width: 100%;
-  text-align: left;
+  width: 150%;
+  max-width: 250px; /* Adjust this value as needed */
+  margin-left: auto; /* Align input to the right */
+}
+
+.ant-btn-primary {
+  background-color: #141414;
 }

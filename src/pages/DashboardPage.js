@@ -67,54 +67,54 @@ const DashboardPage = () => {
       </Content>
 
       <Modal
-        title="Añadir nuevo cliente"
-        visible={isModalVisible}
-        onCancel={handleCancel}
-        footer={null}
-      >
-        <Form onFinish={handleAddClient}>
-          <Form.Item
-            name="name"
-            label="Nombre del Cliente"
-            rules={[{ required: true, message: 'Por favor ingresa el nombre del cliente' }]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name="location"
-            label="Ubicación"
-            rules={[{ required: true, message: 'Por favor ingresa la ubicación del cliente' }]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name="size"
-            label="Tamaño del Campo (ha)"
-            rules={[{ required: true, message: 'Por favor ingresa el tamaño del campo' }]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name="cropType"
-            label="Tipo de Cultivo"
-            rules={[{ required: true, message: 'Por favor ingresa el tipo de cultivo' }]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name="seedingDate"
-            label="Fecha de Siembra"
-            rules={[{ required: true, message: 'Por favor ingresa la fecha de siembra' }]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item>
-            <Button type="primary" htmlType="submit">
-              Añadir Cliente
-            </Button>
-          </Form.Item>
-        </Form>
-      </Modal>
+  title="Añadir nuevo cliente"
+  visible={isModalVisible}
+  onCancel={handleCancel}
+  footer={null}
+>
+  <Form onFinish={handleAddClient} className="add-client-form">
+    <Form.Item
+      name="name"
+      label="Nombre del Cliente"
+      rules={[{ required: true, message: 'Por favor ingresa el nombre del cliente' }]}
+    >
+      <Input />
+    </Form.Item>
+    <Form.Item
+      name="location"
+      label="Ubicación"
+      rules={[{ required: true, message: 'Por favor ingresa la ubicación del cliente' }]}
+    >
+      <Input />
+    </Form.Item>
+    <Form.Item
+      name="size"
+      label="Tamaño del Campo (ha)"
+      rules={[{ required: true, message: 'Por favor ingresa el tamaño del campo' }]}
+    >
+      <Input />
+    </Form.Item>
+    <Form.Item
+      name="cropType"
+      label="Tipo de Cultivo"
+      rules={[{ required: true, message: 'Por favor ingresa el tipo de cultivo' }]}
+    >
+      <Input />
+    </Form.Item>
+    <Form.Item
+      name="seedingDate"
+      label="Fecha de Siembra"
+      rules={[{ required: true, message: 'Por favor ingresa la fecha de siembra' }]}
+    >
+      <Input />
+    </Form.Item>
+    <Form.Item>
+      <Button type="primary" htmlType="submit">
+        Añadir Cliente
+      </Button>
+    </Form.Item>
+  </Form>
+</Modal>
     </Layout>
   );
 };
