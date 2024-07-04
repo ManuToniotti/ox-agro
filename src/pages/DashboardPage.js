@@ -1,14 +1,14 @@
-// src/pages/DashboardPage.js
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Layout, Modal, Form, Input, Button, List, Avatar, Dropdown, Menu } from 'antd';
 import { Link } from 'react-router-dom';
 import ClientCard from '../components/Dashboard/ClientCard';
+import { ClientContext } from '../contexts/ClientContext';
 import './DashboardPage.css';
 
 const { Content } = Layout;
 
 const DashboardPage = () => {
-  const [clients, setClients] = useState([]);
+  const { clients, setClients } = useContext(ClientContext);
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showAddClientModal = () => {

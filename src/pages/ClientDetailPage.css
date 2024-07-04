@@ -1,4 +1,3 @@
-/* src/pages/ClientDetailPage.css */
 .client-detail-layout {
   min-height: 100vh;
   background: #f0f2f5;
@@ -16,6 +15,28 @@
   height: 40px;
 }
 
+.client-widgets {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lower-widgets {
+  display: flex;
+  gap: 16px;
+}
+
 .client-detail-card {
-  margin-bottom: 16px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.client-predictions-card, .client-alerts-card {
+  flex: 1;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
 }
